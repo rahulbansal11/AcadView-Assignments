@@ -74,6 +74,7 @@ for i in x:
 print("even no in list =",count)
 print("odd no in list =",y)
 
+#Tuples:-
 7>>Print a tuple in reverse order:-
 x=[]
 y=int(input("Enter the size of tuple\n"))
@@ -85,3 +86,38 @@ tup=tuple(x)
 print("Tuple is : " , tup)
 rev=reversed(tup)
 print("Reversed tuple is : " , tuple(rev))
+
+8>>Find largest and smallest elements of a tuples:-
+x=[]
+y=int(input("Enter the size of tuple:-\n"))
+print("Enter elements:-")
+for i in range(y):
+    a=int(input())
+    x.append(a)
+tupp=tuple(x)
+print("The largest and smallest elements are " , max(tupp) , " and " , min(tupp) , "respectively")
+print("Reversed tuple is : " , tuple(rev))
+
+#Strings:-
+9>>Convert a string to uppercase:-
+x=input("Enter a string\n")
+print(x.upper())
+
+10>>string contains all numeric characters:-
+str=input("Enter a string:-\n")
+x=0;
+for i in range(len(str)):
+    if str.isdigit():
+       x=1;
+    else:
+        x=0;
+        break;
+if x==1:
+    print("True")
+else:
+    print("False")
+
+11>>Replacing a word in a string
+given="Hello World"
+print(given)
+print(given.replace("World","Rahul"))
